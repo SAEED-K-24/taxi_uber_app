@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:taxi_app/constsnt.dart';
-import 'package:taxi_app/features/auth/auth.dart';
-import 'package:taxi_app/helper/helper.dart';
-import 'package:taxi_app/widget/widget.dart';
+import 'package:go_router/go_router.dart';
+import 'package:taxi_app/app/constsnt.dart';
+import 'package:taxi_app/widgets/widget.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -53,7 +52,7 @@ class SplashScreen extends StatelessWidget {
                       child: Container(
                         width: 318.w,
                         height: 318.h,
-                        decoration:  BoxDecoration(
+                        decoration: BoxDecoration(
                           color: primaryColor.withOpacity(0.5),
                           shape: BoxShape.circle,
                         ),
@@ -80,10 +79,15 @@ class SplashScreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 80.h,),
-          CustomButtonWidget(title: 'Get Started',onTap: () {
-           NavigationHelper.navigationHelper.navigateToWidget(SignPhonePage(),);
-          },),
+          SizedBox(
+            height: 80.h,
+          ),
+          CustomButtonWidget(
+            title: 'Get Started',
+            onTap: () {
+              context.goNamed('phone');
+            },
+          ),
         ],
       )),
     );

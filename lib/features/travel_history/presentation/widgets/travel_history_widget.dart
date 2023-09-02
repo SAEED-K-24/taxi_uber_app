@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:taxi_app/constsnt.dart';
-import 'package:taxi_app/widget/widget.dart';
+import 'package:taxi_app/app/constsnt.dart';
+import 'package:taxi_app/widgets/widget.dart';
 
 class TravelHistoryWidget extends StatefulWidget {
   const TravelHistoryWidget({super.key});

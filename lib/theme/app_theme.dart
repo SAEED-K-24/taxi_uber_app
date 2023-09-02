@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:taxi_app/constsnt.dart';
+import 'package:taxi_app/app/constsnt.dart';
 
 class AppTheme{
   static ThemeData appTheme(BuildContext context) =>  ThemeData(

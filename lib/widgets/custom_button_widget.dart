@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:taxi_app/constsnt.dart';
+import 'package:taxi_app/app/constsnt.dart';
 
 class CustomButtonWidget extends StatelessWidget {
   const CustomButtonWidget({super.key,required this.title,this.onTap});
