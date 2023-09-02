@@ -1,6 +1,8 @@
 # taxi_app
 
-A new Flutter project.
+A new Flutter project || clean architcure || riverpod || go router || maps.
+
+
 
 ## Getting Started
 
